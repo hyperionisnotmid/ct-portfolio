@@ -24,22 +24,26 @@ header {
     display: flex; 
     gap: 15px;
 }
-.links a { /*to make actual link white*/
-    color: white;
-    text-decoration: none;
-    background-color: #1e293b;
-}
-
-.links a {
-    padding: 10px 20px;
-    background-color: #1e293b;
+.links a { /*make button cool*/
     color: #38bdf8;
     text-decoration: none;
+    background-color: #1e293b;
     border-radius: 6px;
-    font-weight: 600;
     border: 2px solid transparent;
     transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    padding: 10px 20px;
+    font-weight: 600;
 }
+.links a:hover {
+    border-color: #0ea5e9;
+    color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+.links a:active {
+    transform: translateY(0);
+}
+
 main {
     flex: 1;
     padding: 24px;
