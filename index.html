@@ -27,8 +27,8 @@
         <div class="banner-section">
             <img src="space2.jpg" class="banner-image" alt="Banner">
             <div class="banner-center">
-                <img src="andywang.jpg" class="banner-circle" alt="Profile">
-                <p class="banner-text">Your Text Here</p>
+                <img src="kon.jpg" class="banner-circle" alt="Profile">
+                <p class="banner-text">Hyperionisnotmid</p>
             </div>
         </div>
 
@@ -63,17 +63,17 @@
                     </video>
                 </div>
 
-                <div class="box" id="big-yahu">
+                <div class="box">Project 4</div>
+
+                <div class="box"> Project 5</div>
+
+                <div class="box">
                     <video autoplay loop muted playsinline>
                         <source src="https://studio-primal.b-cdn.net/Astralis-test/chicken.mp4"
                             type="video/mp4; codecs='hvc1'">
                         <source src="https://studio-primal.b-cdn.net/Astralis-test/chicken.webm" type="video/webm">
                     </video>
                 </div>
-
-                <div class="box"> Project 5</div>
-
-                <div class="box">Project 6</div>
 
             </div>
 
@@ -91,7 +91,6 @@
         aboutBtn.addEventListener("click", (event) => {
             event.preventDefault();
 
-            // Change all boxes to very cool thing
             boxes.forEach(box => {
                 box.innerHTML = `
                 <img src="6767.png" 
@@ -99,7 +98,6 @@
             `;
             });
 
-            // Change the circle into cool person
             bannerCircle.src = "cool.png";
         });
 
