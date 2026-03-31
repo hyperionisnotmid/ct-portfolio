@@ -1,5 +1,4 @@
 body {
-    background-image: url(./sace.jpg);
     background-size: cover;
     background-color: #0b0e14;
     color: white;
@@ -32,16 +31,15 @@ header {
 }
 
 .links a {
-    /*make button cool*/
     font-size: 17px;
     color: #38bdf8;
     text-decoration: none;
     background-color: #1e293b;
     border-radius: 6px;
     border: 2px solid transparent;
-    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
     padding: 10px 20px;
-    font-weight: 501;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
 }
 
 .links a:hover {
@@ -59,21 +57,11 @@ main {
     padding: 24px;
 }
 
-.container {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 960px;
-    margin: 40px auto 0;
-}
-
 .box {
     width: 360px;
     height: 360px;
     background: #1e293b;
     border-radius: 12px;
-    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +73,6 @@ main {
     transition: 0.3s ease;
 }
 
-
 .box:hover {
     border-color: #38bdf8;
     transform: translateY(-4px);
@@ -93,7 +80,6 @@ main {
 }
 
 .box img,
-/* Spinning Chicken :0 */
 .box video {
     width: 100%;
     height: 100%;
@@ -107,7 +93,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer-grid {
@@ -117,13 +102,6 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     width: 100%;
-}
-
-
-.social-logo {
-    width: 32px;
-    height: 32px;
-    object-fit: cover;
 }
 
 .logo {
@@ -184,7 +162,6 @@ footer {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    margin-top: 40px;
     max-width: 600px;
     margin: 40px auto 0;
     text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
@@ -201,11 +178,10 @@ footer {
     letter-spacing: 3px;
 }
 
-
 .project-banner {
     width: 100%;
     height: 400px;
-    background-image: url('space2.jpg');
+    background-image: url('space5.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -245,10 +221,6 @@ footer {
     background-position: center;
 }
 
-.parallax-img {
-    background-attachment: fixed;
-}
-
 .project-info {
     width: 60%;
     padding: 30px;
@@ -264,4 +236,33 @@ footer {
 .project-info p {
     font-size: 18px;
     line-height: 1.7;
+}
+
+.project-card.vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card.vertical .project-info {
+    width: 100%;
+    text-align: center;
+}
+
+.code-image,
+.code-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.code-image img,
+.code-wrapper img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
 }
