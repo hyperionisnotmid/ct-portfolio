@@ -266,3 +266,33 @@ footer {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
     margin-top: 10px;
 }
+
+.reader {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background: #111827;
+    border-radius: 12px;
+}
+
+#content {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
