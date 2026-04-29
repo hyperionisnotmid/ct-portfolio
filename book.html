@@ -22,46 +22,7 @@
         </div>
     </div>
 
-    <script>
-        let currentChapter = 0; // Starts at 0000.md
 
-        async function loadChapter(num) {
-            // This converts the number 1 into "0001"
-            const paddedNum = num.toString().padStart(4, '0');
-            const contentDiv = document.getElementById('content');
-
-            try {
-                const response = await fetch(`./chapters/${paddedNum}.md`);
-
-                if (!response.ok) throw new Error("File not found");
-
-                const rawText = await response.text();
-
-                // If your .md files have Frontmatter (the stuff between ---), 
-                // this regex strips it out so it doesn't show up on the page.
-                const cleanText = rawText.replace(/^---[\s\S]*?---/, '');
-
-                contentDiv.innerHTML = marked.parse(cleanText);
-                document.getElementById('page-number').innerText = `Chapter ${paddedNum}`;
-
-                // Scroll back to top when chapter changes
-                window.scrollTo(0, 0);
-
-            } catch (err) {
-                contentDiv.innerHTML = "<p style='text-align:center;'>Chapter not found or end of book reached.</p>";
-            }
-        }
-
-        function changeChapter(step) {
-            currentChapter += step;
-            if (currentChapter < 0) currentChapter = 0;
-            if (currentChapter > 200) currentChapter = 200;
-            loadChapter(currentChapter);
-        }
-
-        // Load the first chapter (0000.md) on startup
-        loadChapter(currentChapter);
-    </script>
 
 </body>
 
